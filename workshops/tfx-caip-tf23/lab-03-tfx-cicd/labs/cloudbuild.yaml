@@ -40,7 +40,6 @@ steps:
   - 'RUNTIME_VERSION=_$_RUNTIME_VERSION'
   - 'PYTHON_VERSION=$_PYTHON_VERSION'
   - 'USE_KFP_SA=$_USE_KFP_SA'
-  - 'ENABLE_TUNING=$_ENABLE_TUNING'
   dir: $_PIPELINE_FOLDER
 
 
@@ -48,4 +47,4 @@ steps:
 images: ['gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME']
 
 options:
-logging: CLOUD_LOGGING_ONLY
+      logging: CLOUD_LOGGING_ONLY
